@@ -150,9 +150,7 @@ function IncreaseCount(props) {
   const [count, setCount] = useState(parseInt(localStorage.getItem("count")) || props.initialCount);
 
   useEffect(() => {
-    localStorage.setItem("count", count);
-    
-  })
+    localStorage.setItem("count", count); })
 
   return (
     <div>
